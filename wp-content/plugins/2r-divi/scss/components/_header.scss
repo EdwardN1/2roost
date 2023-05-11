@@ -1,3 +1,42 @@
-#holder-style {
-  background-color: blue;
+#header-main-row {
+  #header-column-logo {
+    width: 228px
+  }
+
+  #header-column-home-icon {
+    width: 30px;
+  }
+
+  #header-column-menu {
+    text-transform: uppercase;
+    width: 423px;
+    #menu-header-menu {
+      > li {
+        > ul.sub-menu {
+          padding: 0;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          border: none;
+
+          > li {
+            padding: 0;
+            width: 100%;
+
+            > a {
+              width: 100%;
+              line-height: 1.1em;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #header-column-facebook-icon {
+    width: 30px;
+  }
+
+  #header-column-valuation {
+    width: 175px;
+  }
 }
