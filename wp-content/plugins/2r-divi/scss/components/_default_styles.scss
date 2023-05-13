@@ -1,0 +1,17 @@
+.orange {
+  background-color: #ec6707;
+  font-family: Roboto, Helvetica, Arial, Lucida, sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  p, a, span {
+    font-family: Roboto, Helvetica, Arial, Lucida, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  a {
+    text-decoration: underline;
+    &:hover {
+      color: #cccccc;
+    }
+  }
+}
