@@ -1,3 +1,22 @@
+.two-roost-cta {
+  .et_pb_promo_description {
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,0) 65px);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 14px;
+  }
+  .et_pb_button_wrapper {
+    width: 100%;
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    padding: 7px;
+    text-align: right;
+  }
+}
+
 #homepage-tiles {
   #homepage-tiles-right-column {
     .et_pb_promo_description {
@@ -20,17 +39,6 @@
 
 }
 
-#homepage-tiles-left-column {
-  .home-page-testimonial-button {
-    width: 100%;
-    position: absolute;
-    bottom: 14px;
-    left: 0;
-    padding: 14px;
-    text-align: right;
-  }
-}
-
 @media only screen and (max-width: 1160px)  {
   #homepage-tiles {
     #homepage-tiles-right-column {
@@ -38,5 +46,23 @@
         height: 47.436vw;
       }
     }
+  }
+
+  .et_pb_promo.two-roost-cta.full-w {
+      height: 22.49vw;
+  }
+
+  .et_pb_promo.two-roost-cta.half-w {
+      height: 22.436vw;
+  }
+}
+
+@media only screen and (max-width: 980px)  {
+  .et_pb_promo.two-roost-cta.full-w {
+    height: 47.436vw;
+  }
+
+  .et_pb_promo.two-roost-cta.half-w {
+    height: 47.436vw;
   }
 }
