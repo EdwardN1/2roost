@@ -57,6 +57,14 @@
   }
 }
 
+.two-roost-inline-buttons .et_pb_button_module_wrapper {
+  display: inline-block;
+}
+
+.two-roost-inline-text_block .et_pb_text {
+  display: inline-block;
+}
+
 @media only screen and (max-width: 980px)  {
   .et_pb_promo.two-roost-cta.full-w {
     height: 47.436vw;
