@@ -1,0 +1,38 @@
+#container {
+  &.DiviTheme {
+    max-width: 100%;
+    background-color: #f4f4f4;
+  }
+}
+
+#archive-search-form {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#post-count-and-filters {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #ffffff;
+
+  .count {
+    color: #ec6707;
+    display: inline;
+  }
+
+  .filters {
+    text-align: right;
+  }
+}
+
+#property-results {
+  padding-top: 1em;
+  .properties {
+    > li {
+      background: #fff;
+      border: 1px solid #eac4ab;
+      margin-bottom: 1em;
+      padding: 1em;
+    }
+  }
+}

@@ -3,15 +3,63 @@
   font-family: Roboto, Helvetica, Arial, Lucida, sans-serif;
   font-size: 18px;
   color: #ffffff;
+
   p, a, span {
     font-family: Roboto, Helvetica, Arial, Lucida, sans-serif;
     font-size: 18px;
     color: #ffffff;
   }
+
   a {
     text-decoration: underline;
+
     &:hover {
       color: #cccccc;
     }
+  }
+}
+
+.light-orange {
+  background-color: #eac4ab;
+  font-family: Roboto, Helvetica, Arial, Lucida, sans-serif;
+  font-size: 18px;
+  color: #555555;
+
+  p, a, span {
+    font-family: Roboto, Helvetica, Arial, Lucida, sans-serif;
+    font-size: 18px;
+    color: #555555;
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      color: #cccccc;
+    }
+  }
+}
+
+.inner-container {
+  width: 100%;
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.fbox-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.fbox-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  &.shrink {
+    flex: 0;
   }
 }
