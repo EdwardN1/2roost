@@ -1,6 +1,6 @@
 
 .gravity-global {
-  input.text,input.title,input[type=email],input[type=password],input[type=tel],input[type=text],select,textarea {
+  input.text,input.title,input[type=email],input[type=password],input[type=tel],input[type=text],input[type=number],select,textarea {
     border: 1px solid $orange;
     &:focus {
       border: 1px solid #66afe9;
@@ -11,7 +11,9 @@
       background: #eee;
     }
   }
-}
-#sendEnquiryContent {
-
+  .deep-label {
+    label.gfield_label {
+      margin-bottom: 2.4em;
+    }
+  }
 }

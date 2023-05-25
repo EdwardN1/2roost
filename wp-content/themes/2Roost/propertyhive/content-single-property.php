@@ -320,16 +320,12 @@ if (post_password_required()) {
                             <div class="side-bar-box">
                                 <div class="title-box"><h4 class="title">Are you interested in this property?</h4></div>
                                 <div class="contents-box">
-                                    <div class="staff-box clearfix">Call us on Sheffield Branch 0114 2878696 Rotherham
-                                        Branch 01709 437390 or click the button below for further information.<p><small>Ref:
+                                    <div class="staff-box clearfix">Call us on Sheffield Branch <a href="tel:01142878696" class="white">0114 2878696</a> Rotherham
+                                        Branch <a href="tel:01709437390" class="white">01709 437390</a> or click the button below for further information.<p><small>Ref:
                                                 25910</small></p></div>
 
-                                    <a href="#" data-fancybox data-src="#sendEnquiryContent">Send Enquiry</a>
-                                    <a href="#" data-toggle="modal"
-                                       data-target="#registration-modal"
-                                       class="pointer similar-properties-button"
-                                       title="Receive the newest properties straight to your inbox">
-                                        Send me similar properties </a>
+                                    <a href="#" data-fancybox data-src="#sendEnquiryContent" class="btn white fullwidth">Send Enquiry</a>
+                                    <a href="#" data-fancybox data-src="#similarProperties" class="white underline" title="Receive the newest properties straight to your inbox">Send me similar properties </a>
                                 </div>
                             </div>
                         </div>
@@ -345,6 +341,12 @@ if (post_password_required()) {
         $seFields = array();
         $seFields['view_property'] = $property_view_param = get_the_title().'  Ref: '.$property->reference_number;
         gravity_form(1, false, false, false, $seFields, true, 12);
+        ?>
+    </div>
+    <div id="similarProperties" style="display: none;max-width: 620px;" class="gravity-global">
+        <h4>Register for property alerts</h4>
+        <?php
+        gravity_form(2, false, false, false, '', true, 12);
         ?>
     </div>
 
