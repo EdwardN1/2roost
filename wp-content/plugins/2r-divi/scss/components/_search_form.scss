@@ -16,7 +16,7 @@
   background-color: #ffffff;
 
   .count {
-    color: #ec6707;
+    color: $orange;
     display: inline;
   }
 
@@ -30,7 +30,7 @@
   .properties {
     > li {
       background: #fff;
-      border: 1px solid #eac4ab;
+      border: 1px solid $light-orange;
       margin-bottom: 1em;
       padding: 1em;
     }

@@ -1,0 +1,17 @@
+
+.gravity-global {
+  input.text,input.title,input[type=email],input[type=password],input[type=tel],input[type=text],select,textarea {
+    border: 1px solid $orange;
+    &:focus {
+      border: 1px solid #66afe9;
+    }
+  }
+  .readonly {
+    input.text,input.title,input[type=email],input[type=password],input[type=tel],input[type=text],select,textarea {
+      background: #eee;
+    }
+  }
+}
+#sendEnquiryContent {
+
+}

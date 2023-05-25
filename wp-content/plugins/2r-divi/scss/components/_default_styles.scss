@@ -1,8 +1,49 @@
-.orange {
-  background-color: #ec6707;
+$orange: #ec6707;
+$light-orange: #eac4ab;
+
+p, a, span {
   font-family: Roboto, Helvetica, Arial, Lucida, sans-serif;
   font-size: 18px;
-  color: #ffffff;
+  color: #555555;
+  line-height: 1.8em;
+  font-weight: 400;
+  &.small {
+    line-height: 1.1em;
+    font-size: .7em;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  letter-spacing: .07em;
+  font-weight: 400;
+}
+
+.h4, h4 {
+  font-size: 18px;
+}
+
+p {
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+ul {
+  list-style-type: initial;
+  margin-bottom: 10px;
+  li {
+    font-family: Roboto, Helvetica, Arial, Lucida, sans-serif;
+    font-size: 18px;
+    color: #555555;
+    line-height: 1.8em;
+    font-weight: 400;
+  }
+}
+.orange {
+  background-color: $orange;
+  font-family: Roboto, Helvetica, Arial, Lucida, sans-serif;
+  font-size: 18px;
+  color: $orange;
 
   p, a, span {
     font-family: Roboto, Helvetica, Arial, Lucida, sans-serif;
@@ -20,7 +61,7 @@
 }
 
 .light-orange {
-  background-color: #eac4ab;
+  background-color: $light-orange;
   font-family: Roboto, Helvetica, Arial, Lucida, sans-serif;
   font-size: 18px;
   color: #555555;
@@ -62,4 +103,22 @@
   &.shrink {
     flex: 0;
   }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.label {
+  background-color: $orange;
+  color: #ffffff;
+  display: inline;
+  padding: 0.2em 0.6em 0.3em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
 }
