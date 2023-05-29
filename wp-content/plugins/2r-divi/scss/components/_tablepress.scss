@@ -1,0 +1,19 @@
+.entry-content {
+  table.tablepress {
+    border: 1px solid $orange;
+    --head-active-bg-color: $orange;
+    --head-active-text-color: #ffffff;
+    --border-color: $orange;
+    th {
+      background-color: $orange;
+      color: #ffffff;
+      font-weight: 400;
+      vertical-align: bottom;
+    }
+    tr {
+      td {
+        border-color: $light-orange;
+      }
+    }
+  }
+}

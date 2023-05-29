@@ -6,6 +6,32 @@
       border: 1px solid #66afe9;
     }
   }
+  input[type=submit] {
+    background: $orange;
+    border-color: $orange;
+    border-radius: 0;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    color: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    &:hover {
+      background-color: $light-orange;
+      color: $orange;
+      border-color: $orange;
+      transition: all .2s;
+    }
+  }
   .readonly {
     input.text,input.title,input[type=email],input[type=password],input[type=tel],input[type=text],select,textarea {
       background: #eee;
@@ -17,3 +43,16 @@
     }
   }
 }
+
+
+.gform-field-row--span-two {
+  grid-row: span 2;
+
+}
+
+.gform-field-row--span-three {
+  grid-row: span 3;
+}
+
+/*
+[gravityform id="1" title="false" description="false" ajax="true" tabindex="49" field_values="check=First Choice,Second Choice"]*/
