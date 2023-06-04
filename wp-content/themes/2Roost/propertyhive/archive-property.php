@@ -51,22 +51,22 @@ do_action('propertyhive_before_main_content');
         <div class="inner-container">
             <div class="fbox-row">
 
-                    <?php $count = $GLOBALS['wp_query']->post_count; ?>
-                    <?php if ($count == 1): ?>
-                        <div class="post-count fbox-column shrink count">
-                            <?php echo $count; ?>&nbsp;
-                        </div>
-                        <div class="post-count fbox-column ">
-                            Property for sale
-                        </div>
-                    <?php else: ?>
-                        <div class="post-count fbox-column shrink count">
-                            <?php echo $count; ?>&nbsp;
-                        </div>
-                        <div class="post-count fbox-column ">
-                            Properties for sale
-                        </div>
-                    <?php endif; ?>
+                <?php $count = $GLOBALS['wp_query']->post_count; ?>
+                <?php if ($count == 1): ?>
+                    <div class="post-count fbox-column shrink count">
+                        <?php echo $count; ?>&nbsp;
+                    </div>
+                    <div class="post-count fbox-column ">
+                        Property for sale
+                    </div>
+                <?php else: ?>
+                    <div class="post-count fbox-column shrink count">
+                        <?php echo $count; ?>&nbsp;
+                    </div>
+                    <div class="post-count fbox-column ">
+                        Properties for sale
+                    </div>
+                <?php endif; ?>
 
                 <div class="filters fbox-column">
                     <?php propertyhive_catalog_ordering(); ?>
@@ -80,25 +80,30 @@ do_action('propertyhive_before_main_content');
 // Used primarily by the Map Search add on - https://wp-property-hive.com/addons/map-search/
 if (apply_filters('propertyhive_show_results', true)) :
     ?>
-    <div id="property-results">
+    <div id="property-results" class="archive">
         <div class="inner-container">
-            <?php if (have_posts()) : ?>
+            <div class="col-sm-4">The map</div>
+            <div class="col-sm-8">
+                <?php if (have_posts()) : ?>
 
-                <?php propertyhive_property_loop_start(); ?>
+                    <?php propertyhive_property_loop_start(); ?>
 
-                <?php while (have_posts()) : the_post(); ?>
+                    <?php while (have_posts()) : the_post(); ?>
 
-                    <?php ph_get_template_part('content', 'property'); ?>
+                        <?php ph_get_template_part('content', 'property'); ?>
 
-                <?php endwhile; // end of the loop. ?>
+                    <?php endwhile; // end of the loop. ?>
 
-                <?php propertyhive_property_loop_end(); ?>
+                    <?php propertyhive_property_loop_end(); ?>
 
-            <?php else: ?>
 
-                <?php ph_get_template('search/no-properties-found.php'); ?>
+                <?php else: ?>
 
-            <?php endif; ?>
+                    <?php ph_get_template('search/no-properties-found.php'); ?>
+
+                <?php endif; ?>
+            </div>
+            <div style="clear: both"></div>
         </div>
     </div>
 

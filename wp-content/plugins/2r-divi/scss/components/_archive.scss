@@ -1,0 +1,25 @@
+#property-results.archive {
+  .inner-container {
+    max-width: 1310px;
+    .properties {
+      >li {
+        padding: 0;
+        .thumbnail {
+          width: 40%;
+        }
+        .details {
+          width: 60%;
+          padding: 1em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1310px) {
+
+}
+
+@media only screen and (max-width: 780px) {
+
+}
