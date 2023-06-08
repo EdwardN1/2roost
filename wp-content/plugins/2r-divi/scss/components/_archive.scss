@@ -1,15 +1,124 @@
 #property-results.archive {
   .inner-container {
     max-width: 1310px;
+
+
     .properties {
-      >li {
+      > li {
         padding: 0;
+
         .thumbnail {
           width: 40%;
+          .thumblink {
+            display: block;
+            width: 345px;
+            height: 270px;
+            background-size: cover;
+            background-position: center center;
+
+          }
         }
+
         .details {
           width: 60%;
           padding: 1em;
+          position: relative;
+          min-height: 270px;
+
+          .price {
+            font-size: 1.3em;
+            color: $orange;
+            font-weight: normal;
+          }
+
+          .the_title {
+            margin-bottom: 0;
+            margin-top: 5px;
+            padding-bottom: 13px;
+            border-bottom: 1px solid #ddd;
+
+            h4 {
+              margin: 0;
+              padding: 0;
+            }
+          }
+
+          .property-items {
+            color: #aaa;
+            font-weight: normal;
+            border-bottom: 1px solid #ddd;
+
+            > * {
+              margin-right: 10px;
+            }
+
+            .room-icon {
+              margin-right: 8px;
+              font-size: 1.2em;
+              color: #333;
+
+              &.large {
+                display: inline-block;
+                background: url(img/room-icons-large.jpg);
+                width: 32px;
+                height: 32px;
+                vertical-align: text-bottom;
+
+                &.bedroom {
+                  background-position-x: -64px;
+                }
+
+                &.bathroom {
+                  background-position-x: -32px;
+                }
+
+                &.reception {
+                  background-position-x: 0;
+                }
+              }
+            }
+          }
+
+          .excerpt {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            margin-bottom: 6px;
+            font-size: .8em;
+            line-height: 1.6em;
+            font-style: italic;
+          }
+
+        }
+
+        .property-archive-footer {
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+          left: 0;
+          padding-left: 1em;
+          padding-right: 1em;
+          padding-bottom: 1em;
+          .label {
+            font-size: .7em;
+            color: #999;
+            position: absolute;
+            bottom: 15px;
+            line-height: 1em;
+            background: transparent;
+            border: none;
+            font-weight: 400;
+          }
+          .buttons {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding-right: 1em;
+            padding-bottom: 1em;
+            a.btn.white {
+              color: #333;
+              border: #ccc 1px solid;
+            }
+          }
         }
       }
     }
@@ -17,7 +126,51 @@
 }
 
 @media only screen and (max-width: 1310px) {
+  #property-results.archive {
+    .inner-container {
+      .properties {
+        > li {
+          .thumbnail {
+            .thumblink {
+              max-width: 345px;
+              max-height: 270px;
+              width: 26.336vw;
+              height: 20.611vw;
+            }
+          }
+          .details {
+            min-height: 362px;
+          }
+        }
+      }
+    }
+  }
+}
 
+@media only screen and (max-width: 980px) {
+  #property-results.archive {
+    .inner-container {
+      .properties {
+        > li {
+
+          .thumbnail {
+            float: none;
+            width: 100%;
+            .thumblink {
+              width: 100%;
+              max-width: none;
+              height: 54.349vw;
+            }
+          }
+          .details {
+            width: 100%;
+            float: none;
+            min-height: 362px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 780px) {

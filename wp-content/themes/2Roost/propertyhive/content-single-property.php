@@ -338,9 +338,7 @@ if (post_password_required()) {
     <div id="sendEnquiryContent" style="display: none;max-width: 350px;" class="gravity-global">
         <h4>Book a Viewing</h4>
         <?php
-        $seFields = array();
-        $seFields['view_property'] = $property_view_param = get_the_title().'  Ref: '.$property->reference_number;
-        gravity_form(1, false, false, false, $seFields, true, 12);
+        gravity_form(1, false, false, false, array(), true, 12);
         ?>
     </div>
     <div id="similarProperties" style="display: none;max-width: 620px;" class="gravity-global">
